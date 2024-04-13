@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #b5b5b5;
+    height: 70px;
+}
+
+header *{
+    color: #585858;
+}
+
+header h3{
+    margin-top: 16px;
+}
+
+header h3 a{
+    color: #585858;
+}
+
+header h3 a:hover{
+    color: #585858;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    padding: 20px;
+}
