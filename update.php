@@ -4,7 +4,7 @@ include ("validator.php");
 if (isset($_POST["name"]) && isset($_POST["phone"])) {
     $res = json_decode(file_get_contents("dictionary.json"), true);
 
-    if (count($res) != 0) {
+    if ($res != []) {
         $id = $res[count($res)]["id"] + 1;
     } else {
         $id = 1;
