@@ -1,5 +1,5 @@
 <?php
-include("delete.php");
+include ("delete.php");
 ?>
 
 <!DOCTYPE html>
@@ -33,18 +33,20 @@ include("delete.php");
         </thead>
         <tbody>";
     $i = 1;
-    foreach ($res as $row) {
-        echo "<tr>
+    if ($res != []) {
+        foreach ($res as $row) {
+            echo "<tr>
                     <th scope=\"row\">" . $i . "</th>
                     <td>" . $row["name"] . "</td>
                     <td>" . $row["phone"] . "</td>
                     <td><button name=\"btn\" value=\"" . $row["id"] . "\">delete</button></td>
                 </tr>";
-        $i += 1;
-    }
-    echo "</tbody>
+            $i += 1;
+        }
+        echo "</tbody>
         </table>";
-    echo "</form>";
+        echo "</form>";
+    }
     ?>
 </body>
 
